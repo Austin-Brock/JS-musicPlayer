@@ -20,4 +20,11 @@ const allSongs = [
         duration: "4:15",
         src: "https://s3.amazonaws.com/org.freecodecamp.mp3-player-project/cant-stay-down.mp3",
       },
-]; //empty array for all songs
+      {
+        id: 9,
+        title: "Chasing That Feeling",
+        artist: "Quincy Larson",
+        duration: "2:43",
+        src: "https://s3.amazonaws.com/org.freecodecamp.mp3-player-project/chasing-that-feeling.mp3",
+      },
+];
