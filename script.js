@@ -177,6 +177,10 @@ const renderSongs = (array) => {
   playlistSongs.innerHTML = songsHTML;
 };
 
+const setPlayButtonAccessibleText = () => {
+  
+}
+
 const getCurrentSongIndex = () => userData?.songs.indexOf(userData?.currentSong);
 
 playButton.addEventListener("click", () => {
