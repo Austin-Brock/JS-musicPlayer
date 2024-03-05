@@ -135,6 +135,10 @@ const setPlayerDisplay = () => {
   const songArtist = document.getElementById("player-song-artist");
   const currentTitle = userData?.currentSong?.title;
   const currentArtist = userData?.currentSong?.artist;
+
+  // Use a ternary operator to check if currentTitle evaluates to a truthy value. If it does, set playingSong.textContent to currentTitle. Otherwise, set it to an empty string.
+  playingSong.textContent = currentTitle ? currentTitle : "";
+  songArtist.textContent = currentArtist ? currentArtist : "";
 };
 
 const highlightCurrentSong = () => {
