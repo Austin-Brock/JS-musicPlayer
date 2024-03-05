@@ -138,6 +138,11 @@ const shuffle = () => {
   songCurrentTime = 0;
   userData.currentSong = null;
   userData.songCurrentTime = 0;
+
+  renderSongs(userData?.songs);
+  pauseSong();
+  setPlayerDisplay();
+  setPlayButtonAccessibleText();
 }
 
 const setPlayerDisplay = () => {
