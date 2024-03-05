@@ -248,7 +248,8 @@ previousButton.addEventListener("click", playPreviousSong);
 shuffleButton.addEventListener("click", shuffle);
 
 audio.addEventListener("ended", () => {
-  
+  const currentSongIndex = getCurrentSongIndex();
+  const nextSongExists = userData?.songs[currentSongIndex + 1] !== undefined;
 });
 
 const sortSongs = () => {
