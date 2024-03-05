@@ -146,7 +146,8 @@ const shuffle = () => {
 }
 
 const deleteSong = (id) => {
-  
+  //Use the filter() method on userData?.songs. Pass in song as the parameter of the arrow function callback and use implicit return to check if song.id is strictly not equal to id. Assign all of that to the userData.songs.
+  userData.songs = userData?.songs.filter((song) => song.id !== id);
 };
 
 const setPlayerDisplay = () => {
